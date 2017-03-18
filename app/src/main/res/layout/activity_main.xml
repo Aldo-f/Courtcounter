@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    tools:context="com.aldofieuw.android.courtcounter.MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/team_a_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/team_a"
+                android:textColor="#616161"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/startScore"
+                android:textColor="#000"
+                android:textSize="56sp"/>
+
+            <Button
+                android:id="@+id/score3_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="addThreeForTeamA"
+                android:text="@string/score3"
+                android:textAllCaps="true"/>
+            <Button
+                android:id="@+id/score2_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="addTwoForTeamA"
+                android:text="@string/score2"
+                android:textAllCaps="true"/>
+            <Button
+                android:id="@+id/score1_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="addOneToTeamA"
+                android:text="@string/score1"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+        <View android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/darker_grey">
+
+        </View>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/team_b_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/team_b"
+                android:textColor="#616161"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/startScore"
+                android:textColor="#000"
+                android:textSize="56sp"/>
+
+            <Button
+                android:id="@+id/scoreB3_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="addThreeForTeamB"
+                android:text="@string/score3"
+                android:textAllCaps="true"/>
+            <Button
+                android:id="@+id/scoreB2_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="addTwoForTeamB"
+                android:text="@string/score2"
+                android:textAllCaps="true"/>
+            <Button
+                android:id="@+id/scoreB1_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="addOneToTeamB"
+                android:text="@string/score1"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:onClick="resetScore"
+        android:text="@string/reset"
+        android:textAllCaps="true"/>
+
+
+
+</RelativeLayout>
